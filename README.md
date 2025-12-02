@@ -18,8 +18,10 @@
 
 ### 2. Установка и запуск
 
+#### Linux / MacOS
+
 ```bash
-# Клонируйте проект или скачайте файлы
+# Перейдите в папку проекта
 cd echotbot
 
 # Создайте виртуальное окружение
@@ -29,13 +31,60 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Установите зависимости
-pip install pyTelegramBotAPI
+pip install -r requirements.txt
 
 # Откройте файл e.py и вставьте свой токен вместо 'ВАШ_ТОКЕН'
 
 # Запустите бота
 python e.py
 ```
+
+#### Windows (CMD)
+
+```cmd
+:: Перейдите в папку проекта
+cd echotbot
+
+:: Создайте виртуальное окружение
+python -m venv venv
+
+:: Активируйте его
+venv\Scripts\activate.bat
+
+:: Установите зависимости
+pip install -r requirements.txt
+
+:: Откройте файл e.py и вставьте свой токен вместо 'ВАШ_ТОКЕН'
+
+:: Запустите бота
+python e.py
+```
+
+#### Windows (PowerShell)
+
+```powershell
+# Перейдите в папку проекта
+cd echotbot
+
+# Создайте виртуальное окружение
+python -m venv venv
+
+# Активируйте его
+.\venv\Scripts\Activate.ps1
+
+# Установите зависимости
+pip install -r requirements.txt
+
+# Откройте файл e.py и вставьте свой токен вместо 'ВАШ_ТОКЕН'
+
+# Запустите бота
+python e.py
+```
+
+> ⚠️ **PowerShell:** если появится ошибка "выполнение сценариев отключено", выполните:
+> ```powershell
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+> ```
 
 ### 3. Тестирование
 
